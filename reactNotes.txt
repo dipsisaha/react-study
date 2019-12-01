@@ -1,0 +1,15 @@
+***** REACT JS ******
+
+
+//** Pure component **//
+Regular Component doesnot implement shouldComponentUpdate() method.
+Pure Component always follow the shouldComponentUpdate() method with a shallow props and state comparison.
+     SC of prevState with current State  != then re-render component
+	 SC of prevProps with current Props  != then re-render component
+
+In a nutshell if there is no difference , the component is re-render -it increase the performance boost.
+It is agood idea that all children component should be purecomponent to avaoid the unexpected behavior.
+never mutate the state,always return a new object that reflects the new state.
+
+
+Same thing is doing in memocomponent for functional component
